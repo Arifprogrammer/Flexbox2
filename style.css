@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 80vh;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.one{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.one .a{
+    background-color: rgba(165, 42, 42, 0.26);
+}
+.one .b{
+    background-color: rgba(137, 43, 226, 0.301);
+}
+.one .c{
+    background-color: rgba(210, 105, 30, 0.26);
+}
+.two{
+    background-color: rgba(117, 117, 42, 0.301);
+}
+.a, .b, .c, .two{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.extra_text{
+    display: none;
+}
+.img{
+    flex-basis: 40%;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.p{
+    flex-basis: 58%;
+}
+
+@media (min-width : 1200px){
+    .container{
+        flex-direction: row;
+        flex-basis: 60%;
+    }
+    .one{
+        display: flex;
+        flex-basis: 80%;
+    }
+    .one .a{
+        flex-basis: 50%;
+        /* padding-bottom: 200px; */
+    }
+    .one .b{
+        flex-basis: 50%;
+        /* padding-bottom: 200px; */
+    }
+    .one .c{
+        flex-basis: 100%;
+        /* padding: 0px; */
+    }
+    .two{
+        flex-basis: 20%;
+        flex-direction: column;
+        margin-left: 4px;
+    }
+    .two .p{
+        padding-left: 7px;
+    }
+    .img img{
+        object-fit: initial;
+    }
+    .extra_text{
+        display: initial;
+    }
+}
