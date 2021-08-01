@@ -50,7 +50,6 @@ section{
 .img img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
 }
 .p{
     flex-basis: 58%;
@@ -68,15 +67,6 @@ section{
         display: flex;
         flex-basis: 80%;
     }
-    .one .a{
-        flex-basis: 50%;
-    }
-    .one .b{
-        flex-basis: 50%;
-    }
-    .one .c{
-        flex-basis: 100%;
-    }
     .two{
         flex-basis: 20%;
         flex-direction: column;
@@ -85,10 +75,63 @@ section{
     .two .p{
         padding-left: 7px;
     }
-    .img img{
-        object-fit: initial;
-    }
     .extra_text{
         display: initial;
+    }
+    .a:hover{
+        background-image: url("./images/images (1).jpg");
+        background-size: 980px 400px;
+        /* background-size: cover; */
+        color: rgb(7, 7, 7);
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .a:hover .a_img{
+        display: none;
+    }
+    .a:hover .a_p{
+        background-color: rgba(240, 248, 255, 0.685);
+    }
+    .b:hover{
+        background-image: url("./images/images (4).jpg");
+        background-size: 980px 400px;
+        /* background-size: cover; */
+        color: rgb(7, 7, 7);
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .b:hover .b_img{
+        display: none;
+    }
+    .b:hover .b_p{
+        background-color: rgba(240, 248, 255, 0.685);
+    }
+    .c:hover{
+        background-image: url("./images/images (2).jpg");
+        /* background-size: 980px 400px; */
+        background-size: cover;
+        color: rgb(7, 7, 7);
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .c:hover .c_img{
+        display: none;
+    }
+    .c:hover .c_p{
+        background-color: rgba(240, 248, 255, 0.685);
+    }
+    .two:hover{
+        flex-basis: 40%;
+        background-image: url("./images/images\ \(3\).jpg");
+        background-size: 100% 100%;
+        color: rgb(7, 7, 7);
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .two:hover .two_img{
+        display: none;
+    }
+    .two:hover .two_p{
+        background-color: rgba(240, 248, 255, 0.685);
     }
 }
