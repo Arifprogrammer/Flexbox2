@@ -12,15 +12,16 @@ section{
 }
 .container{
     height: 80vh;
-    flex-basis: 100%;
+    flex-basis: 95%;
     display: flex;
     flex-direction: column;
     font-size: 20px;
 }
 .one{
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 .one .a{
     background-color: rgba(165, 42, 42, 0.26);
@@ -55,7 +56,10 @@ section{
     flex-basis: 58%;
 }
 
-@media (min-width : 1200px){
+@media (min-width : 800px){
+    section{
+        height: 100vh;
+    }
     .container{
         flex-direction: row;
         flex-basis: 60%;
@@ -66,15 +70,12 @@ section{
     }
     .one .a{
         flex-basis: 50%;
-        /* padding-bottom: 200px; */
     }
     .one .b{
         flex-basis: 50%;
-        /* padding-bottom: 200px; */
     }
     .one .c{
         flex-basis: 100%;
-        /* padding: 0px; */
     }
     .two{
         flex-basis: 20%;
