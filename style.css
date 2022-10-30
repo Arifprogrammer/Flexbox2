@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 section{
     display: flex;
@@ -47,7 +47,7 @@ section{
 .img{
     flex-basis: 40%;
 }
-.img img{
+img{
     height: 100%;
     width: 100%;
 }
@@ -66,6 +66,9 @@ section{
     .one{
         display: flex;
         flex-basis: 80%;
+    }
+    .one>.a, .b, .c{
+        overflow: hidden;
     }
     .two{
         flex-basis: 20%;
